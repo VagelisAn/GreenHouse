@@ -14,7 +14,7 @@ public class TemperatureHumidity {
 	private String name;
 
 	@Column(name = "type")
-	private String tyoe;
+	private String typeSensor;
 
 	@Column(name = "model")
 	private String model;
@@ -32,9 +32,9 @@ public class TemperatureHumidity {
 
 	}
 
-	public TemperatureHumidity(String name, String tyoe, String model, float temperature, float humidity, String greenHouse) {
+	public TemperatureHumidity(String name, String typeSensor, String model, float temperature, float humidity, String greenHouse) {
 		this.name = name;
-		this.tyoe = tyoe;
+		this.typeSensor = typeSensor;
 		this.model = model;
 		this.temperature = temperature;
 		this.humidity = humidity;
@@ -58,11 +58,11 @@ public class TemperatureHumidity {
 	}
 
 	public String getTyoe() {
-		return tyoe;
+		return typeSensor;
 	}
 
-	public void setTyoe(String tyoe) {
-		this.tyoe = tyoe;
+	public void setTyoe(String typeSensor) {
+		this.typeSensor = typeSensor;
 	}
 
 	public String getModel() {
@@ -95,5 +95,18 @@ public class TemperatureHumidity {
 
 	public void setGreenHouse(String greenHouse) {
 		this.greenHouse = greenHouse;
+	}
+
+	@Override
+	public String toString() {
+		return "TemperatureHumidity{" +
+				"id=" + id +
+				", name='" + name + '\'' +
+				", tyoe='" + typeSensor + '\'' +
+				", model='" + model + '\'' +
+				", temperature=" + temperature +
+				", humidity=" + humidity +
+				", greenHouse='" + greenHouse + '\'' +
+				'}';
 	}
 }

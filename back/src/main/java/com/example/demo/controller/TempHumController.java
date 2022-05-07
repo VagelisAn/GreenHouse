@@ -50,6 +50,7 @@ public class TempHumController {
 
 	@PostMapping()
 	public ResponseEntity<TemperatureHumidity> createTutorial(@RequestBody TemperatureHumidity temperatureHumidity) {
+		System.out.println(temperatureHumidity.toString());
 		try {
 			TemperatureHumidity _temperatureHumidity = tempHumRepository
 					.save(temperatureHumidity);
