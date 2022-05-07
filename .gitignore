@@ -36,3 +36,4 @@ TestResults.xml
 
 /target/**
 /target/
+back/target/classes back/target/demo-0.0.1-SNAPSHOT back/target/demo-0.0.1-SNAPSHOT.war back/target/demo-0.0.1-SNAPSHOT.war.original back/target/generated-sources back/target/maven-archiver back/target/maven-status
